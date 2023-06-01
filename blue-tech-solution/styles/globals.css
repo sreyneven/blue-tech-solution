@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family:'Recoleta' ;
+    src: url(../public/fonts/Recoleta-Bold.ttf);
+}
+
+
+html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+  }
+h1{
+    font-family: var(--font-myFont);
+}
+.font-open-san{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+.font-manrope{
+    font-family: 'Manrope', sans-serif;
+}
+.font-dm-sans{
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Hover*/
+ul li::after {
+    content: "";
+    width: 0;
+    height: 0.12rem;
+    background: #4169E1;
+    display:block;
+    transition: .5s;
+}
+@media (min-width: 640px){
+    ul li:hover::after{
+        width: 100%;
+}
+
+}
+ul li .a{
+    transition: .5s ease-in-out;
+}
+.active {
+    border-bottom: 2px solid #4169E1;
+    padding:0rem 0rem 0.2rem 0rem;
+    color: #4169E1;
+    font-size: 1rem;
+    transition: 1s;
+    
+}
+/* Title in Home page */
+h1.TitleTransform span {
+    color: #4169E1;
+}
+
+/* Content in FAQS page */
+h1.contentTransform span{
+    color: #ffff;
+    background: #4169E1;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5rem 1.3rem 0.3rem 0.5rem;
+
+}
+
+/* Animation button scroll down in home page */
+.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@media (min-width: 1024px){
+        .video iframe{
+            width: 592px;
+        }
+    
+}
+@media (min-width: 768px){
+    .video iframe{
+        width: 592px;
+    }
+
+}
+@media (min-width: 640px){
+    .video iframe{
+        width: 592px;
+    }
+
+}
